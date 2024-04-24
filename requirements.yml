@@ -1,0 +1,10 @@
+r_packages:
+  - knitr
+  - markdown
+  - rmarkdown
+  - xaringan
+  - DT
+  - pagedown
+r_github_packages:
+  - hadley/emo
+  - gadenbuie/xaringanExtra
