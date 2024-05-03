@@ -9,7 +9,7 @@ server:
 	Rscript -e "xaringan::infinite_moon_reader('$(IND).Rmd')"
 
 pdf:
-	Rscript -e "pagedown::chrome_print(input = 'index.html', output = 'slides.pdf')"
+	Rscript -e "pagedown::chrome_print(input = 'index.html', output = 'slides.pdf', timeout = 60)"
 
 install:
 	Rscript conf/installPackages.R
