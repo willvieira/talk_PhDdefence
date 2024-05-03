@@ -1,5 +1,5 @@
 ---
-title: Talk template
+title: PhD defence
 output:
   xaringan::moon_reader:
   #  self_contained: TRUE
@@ -9,6 +9,7 @@ output:
     seal: false
     css: ["default", "conf/css/style.css", "conf/css/fonts.css"]
     nature:
+      slideNumberFormat: "%current%" # show only the current slide number
       highlightStyle: solarized-light
       highlightLines: true
       beforeInit: ["conf/js/gifffer.min.js", "conf/js/style-macros.js"]
@@ -43,479 +44,673 @@ class: middle, title-slide
 
 <!-- top logo (comment to remove or edit on `conf/css/style.css:23`) -->
 <div class="lab-logo"></div>
-<!-- <div class="uni-logo"></div> -->
+<!-- <div class="bios2-logo"></div> -->
 
-# Title of my talk template
+# Le rôle du climat et de la compétition sur l'aire de répartition des arbres
 
 <hr width="65%" align="left" size="0.3" color="orange"></hr>
 
-## My talk subtitle
+## Une approche multi-échelle de l'individu à la métacommunauté
 
-### Willian Vieira, .small[PhD candidate <br> + Collaborators]
+### Willian Vieira
 
-<br><br><br><br><br>
-[<i class="fa fa-github fa-lg" style="color:#e7e8e2"></i> WillVieira/talkTemplate](https://github.com/willvieira/talkTemplate)
-
-[<i class="fa fa-twitter fa-lg" style="color:#e7e8e2"></i> @WillVieira90](https://twitter.com/willvieira90)
+<br><br><br>
+[<i class="fa fa-github fa-lg" style="color:#e7e8e2"></i> WillVieira/talk_PhDdefence](https://github.com/willvieira/talk_PhDdefence)
 
 ---
 
-# Introduction
-
-- How to setup
-- Content
-- `xaringanExtra` extensions
-- JS libraries
-
----
-class: middle, center, inverse
-
-# How to use it?
-<hr width="100%" align="left" size="0.3" color="orange"></hr>
-
----
-class: middle, center, inverse-old
-
-# How to use it?
-<hr width="100%" align="left" size="0.3" color="orange"></hr>
-
-
----
-# Workflow
-
-It is recomended to install all (R packages `r emo::ji("package")`) dependencies:
-
-```make
-make install
-```
-.font90[If you use other R packages for your presentation, add them to the `requeriments.yml` file]
+# Une curiosité générale pour comprendre <br> l'aire de répartition des espèces
 
 <br>
 
-Once dependencies are solved, you can server your presentation on local to be automatically updated while editing:
+.center[![:scale 100%](images/darwin.png)]
 
-```make
-make server
-```
-
-Finally, publish your final `html` presentation with:
-
-```make
-make
-```
+.cite[Map of the Voyage of Charles Darwin 1831 -1836, University of Illinois]
 
 ---
-class: middle, center, inverse
 
-# Content
-<hr width="100%" align="left" size="0.3" color="orange"></hr>
-
----
-# Sections
-
-Slides are separeted by `---`:
-
-.code70[
-```{markdown}
----
-# My slide title
-
-Content here
-
----
-```
-]
-
-Title sections, like the previous slide, needs to specify the following classes:
-
-.code70[
-```markdown
----
-class: middle, center, inverse
-
-# Title of my section
-<hr width="100%" align="left" size="0.3" color="orange"></hr>
-
----
-```
-]
-
-.font80[
-You can use one of these classes in any slide if you want to:
-- Vertical center the content (`middle`)
-- Horizontal center the content (`center`)
-- Or inverse the background and text colours (`inverse`)
-]
-
----
-# Tables
-
-.pull-left[
-You can simply insert a markdown table:
-
-.font70[
-| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
-]]
-
-.pull-right[
-Or you can use the `DT` R package for dynamic tables:
-
-.font70[
-```{r}
-DT::datatable(head(cars))
-```
-]]
-
----
-# Figures
-
-Insert an image:
-
-```md
-![](images/model1.svg)
-```
-.center[
-  ![:scale 70%](images/model1.svg)
-]
-
----
-# Figures
-
-Scale the size of an image:
-
-```md
-![:scale 60%](images/model1.svg)
-```
-.center[
-  ![:scale 40%](images/model1.svg)
-]
-
----
-# Figures
-
-Or simply code it:
-
-```{r, echo=-1}
-par(mypar)
-plot(cars$speed, cars$dist)
-```
-
----
-# Figures
-
-Use the code chunck options to change the size of a plot :
-
-```{r echo=FALSE, class.output="r", comment=""}
-cat(paste(sep = "\n",
-  "\```{r, fig.width = 4, fig.height = 2.5}",
-  "plot(cars$speed, cars$dist)",
-  "```"
-))
-```
-
-```{r, echo=FALSE, fig.width = 4, fig.height = 2.5}
-par(mypar)
-plot(cars$speed, cars$dist)
-```
-
-.font90[
-  *You can check a full list of chunck options [here](https://yihui.org/knitr/options/)*
-]
-
----
-# Columns
-
-50/50 columns can be created with:
-
-.code90[
-```{markdown}
-.pull-left[
-  Content 1
-]
-.pull-right[
-  content 2
-]
-```
-
-.pull-left[
-For left larger columns:
-```{markdown}
-.pull-left1[
-  Content 1
-]
-.pull-right1[
-  content 2
-]
-```
-]
-.pull-right[
-Or right larger columns:
-```{markdown}
-.pull-left2[
-  Content 1
-]
-.pull-right2[
-  content 2
-]
-```
-]
-]
-
----
-# Text position
-
-Instead of using columns, you can define the content position with:
-
-
-.left[
-Left aligned
-```{markdown}
-.left[text here]
-```
-]
-
-.center[
-Center aligned
-```{markdown}
-.left[text here]
-```
-]
-
-.right[
-Right aligned
-```{markdown}
-.left[text here]
-```
-]
-
----
-# Text size
-
-And also text size:
-
-```{markdown}
-.fontX[
-  Content here
-]
-```
-
-Where `X` can be anything between `10` (.font10[very small]) and `200` (.font200[HUGE]) by an increent of `10`:
-
-.code70[
-```{r}
-print(seq(10, 200, 10))
-```
-]
-
----
-# Animation
-
-Using `--` between lines
-
---
-- you
-
---
-- can
-
---
-- animate
-
----
-# Math
-
-$\LaTeX$ math expressions can be writen between `$$`:
-
-```{markdown}
-$$
-  \bar{X}=\frac{1}{n}\sum_{i=1}^nX_i
-$$
-```
-
-
-$$
-  \bar{X}=\frac{1}{n}\sum_{i=1}^nX_i
-$$
-
-
----
-# Citation
-
-This macro is just to easily insert text on the bottom of the slide:
-
-.code70[
-```{markdown}
-.cite[Talluto et al. [2017](https://link) Nat. Ecol. Evol.]
-```
-]
-
-.center[![:scale 70%](images/Talluto1.png)]
-
-.cite[Talluto et al. [2017](https://www.nature.com/articles/s41559-017-0182) Nat. Ecol. Evol.]
-
----
-# Icons
-
-You can use both [Font awesome](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/) icons
-
-.pull-left[
-Font awesome icons (`faic`)
-
-```{markdown}
-![:faic](pagelines)
-```
-![:faic](pagelines) 
-]
-.pull-right[
-Academic icons (`acid`)
-
-```{markdown}
-![:acic](orcid)
-```
-![:acic](orcid)
-]
+# Un besoin face aux changements climatiques
 
 <br>
-You can also ajust their size with the following argument:
 
-```{markdown}
-![:faic 2](pagelines)
-```
-![:faic 2](pagelines) 
+.center[![:scale 75%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/mckenney.png)]
+
+.cite[McKenney et al. 2007 BioScience]
+
+<!-- 
+.center[![:scale 70%](https://review.brunswickgroup.com/wp-content/uploads/2023/04/BiodiversityCartoon-850x659-50x50.jpg)] -->
 
 ---
-class: middle, center, inverse
 
-# 📦 `{xaringanExtra}`
+# Modèle mechanistique basé sur la <br> théorie de la métacommunauté
+
+<br>
+
+.center[![:scale 85%](images/model_complete_temp.svg)]
+
+.cite[Vissault et al. [2020](https://link) Journal of Biogeography]
+
+
+---
+
+# Modèle mechanistique basé sur la <br> théorie de la métacommunauté
+
+<br>
+
+.center[![:scale 85%](images/model_complete_Reg.svg)]
+
+
+.cite[Vissault et al. [2020](https://link) Journal of Biogeography]
+
+
+---
+
+# Modèle mechanistique basé sur la <br> théorie de la métacommunauté
+
+<br>
+
+.center[![:scale 85%](images/model_complete_noManag.svg)]
+
+.cite[Vissault et al. [2020](https://link) Journal of Biogeography]
+
+---
+
+# Modèle mechanistique basé sur la <br> théorie de la métacommunauté
+
+<br>
+
+De très bonnes prédictions avec peu de paramètres !
+
+.center[![:scale 100%](https://raw.githubusercontent.com/willvieira/talk_STM-BScUdeS/master/images/338_500ts_final_land.png)]
+
+.cite[Vissault et al. [2020](https://link) Journal of Biogeography]
+
+---
+
+# Modèle mechanistique basé sur la <br> théorie de la métacommunauté
+
+Le réchauffement des températures réduira les <span style="color:#95c887">**forêts mixtes**</span>
+
+.center[![:scale 85%](images/RCP8.5.gif)]
+
+.cite[Vissault et al. [2020](https://link) Journal of Biogeography]
+
+---
+class: center, inverse, middle
+
+
+### Comment l'aménagement forestier peut-il accélérer la réponse des forêts au changement climatique ?
+
 <hr width="100%" align="left" size="0.3" color="orange"></hr>
 
+### Chapitre 1
 ---
-# `{xaringanExtra}`
 
-This awesome R package provides enhancements for xaringan such as
+# Quel est l'effet de l'aménagement forestier sur la vitesse de déplacement de l'aire de répartition ?
 
-> - Add an overview of your presentation with tile view
-> - Make your slides editable
-> - Announce slide changes with a subtle tone
-> - Animate slide transitions with animate.css
-> - Add tabbed panels to slides with panelset
-> - Add a logo to all of your slides with logo
-> - Use the Tachyons CSS utility toolkit
-> - Add a live video feed of your webcam
-> - Fit your slides to fill the browser window
-> - Add extra CSS styles
+<br>
 
-Take a look in their full documentation [here](https://pkg.garrickadenbuie.com/xaringanExtra/#/)
-
-I added some examples in the following slides...
+.center[![:scale 85%](images/model_complete.svg)]
 
 ---
-# `{xaringanExtra}` tile view
-
-Press the letter "o" 😲
-
----
-# `{xaringanExtra}` Editable slides
-
-Just use the following class:
-
-```{markdown}
-.can-edit[ ... ]
-```
-
-What do you think?
-
-.can-edit[
-  -
-]
-
----
-# `{xaringanExtra}` Panelset
-
-.panelset[
-.panel[.panel-name[Code]
-```{r}
-x = rnorm(100, 10, 4)
-y = rnorm(100, 2, 1)
-```
-]
-
-.panel[.panel-name[Plot]
-```{r}
-plot(x, y)
-```
-]
-
-.panel[.panel-name[How?]
-```{markdown}
-.panelset[
-  
-  .panel[.panel-name[Code]
-    ...
-  ]
-
-  .panel[.panel-name[Plot]
-    ...
-  ]
-]
-```
-]
-]
 
 
----
-class: middle, center, inverse
-
-# ![:faic](js) libraries
-<hr width="100%" align="left" size="0.3" color="orange"></hr>
-
-
----
-# `Gifffer`
-
-> [Gifffer](https://github.com/krasimir/gifffer) prevents the autoplaying of the animated Gifs
-
-Instead of adding a gif with the same syntax of an image (which plays automatically), you can use the `giffer` JS macro:
-
-```{markdown}
-![:giffer 80%](images/RCP6_enrich.gif)
-```
-
-Where `80%` is the width of the gif
+# La plantation d'enrichissement est la pratique la plus efficace pour augumenter le deplacement
 
 .center[
-  ![:giffer 80%](https://github.com/willvieira/talk_STM-BScUdeS/raw/master/images/RCP6_enrich.gif)
+![:scale 60%](https://willvieira.github.io/ms_STM-managed/manuscript/img/sim-result_3.png)
+]
+
+.cite[Vieira et al. en révision]
+
+---
+# Le taux de colonisation et extinction varie entre les **espèce** et dans leur **aire de distribution**
+
+<br>
+
+.center[
+![:scale 100%](images/Talluto2017.png)
+]
+
+.cite[Talluto et al. 2017 Nature Ecology & Evolution]
+
+---
+
+# Lien entre les taux demographiques et l'aire de répartition d'une espèce
+
+<br>
+
+.font120[*r ~ Climat*]
+
+.center[
+![:scale 75%](images/GodsoeA.png)
+]
+
+.cite[Maguire Jr 1973 Am. Natur.; Holt 2009 PNAS; Fig adapted from Godsoe et al. 2017 TREE]
+
+---
+
+# Lien entre les taux demographiques et l'aire de répartition d'une espèce
+
+<br>
+
+.font120[*r ~ Climat + compétition*]
+
+.center[
+![:scale 75%](images/GodsoeB.png)
+]
+
+.cite[Maguire Jr 1973 Am. Natur.; Holt 2009 PNAS; Fig adapted from Godsoe et al. 2017 TREE]
+
+---
+
+# La corrélation entre **performance** et **occurrence** <br> est faible pour la majorité des espèces
+
+<br>
+
+.center[
+![:scale 80%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/LeSquin2020.png)
+]
+
+.cite[Le Squin et al. 2020 Global Ecology and Biogeography]
+
+---
+# La variabilité ne devrait pas être négligée
+
+<br><br>
+.center[![:scale 90%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/growth_abibal.png)]
+
+---
+
+# Les multiples sources de variabilité
+
+.center[
+  ![:scale 60%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/Shoemaker2020a.png)
+]
+
+.cite[Adapté de Shoemaker et al. 2020 Ecology]
+
+---
+
+
+# Les multiples sources de variabilité
+
+.center[
+  ![:scale 60%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/Shoemaker2020b.png)
+]
+
+.cite[Adapté de Shoemaker et al. 2020 Ecology]
+
+---
+
+# Les multiples sources de variabilité
+
+.center[
+  ![:scale 60%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/Shoemaker2020c.png)
+]
+
+.cite[Adapté de Shoemaker et al. 2020 Ecology]
+
+---
+
+# Les multiples sources de variabilité
+
+.center[
+  ![:scale 60%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/Shoemaker2020d.png)
+]
+
+.cite[Adapté de Shoemaker et al. 2020 Ecology]
+
+---
+
+# L'effet de la variabilité sur le taux démographique peut être <span style='color: #67a9cf;'>positif</span> ou <span style='color: #ef8a62;'>négatif</span>
+
+- <span style='color: #ef8a62;'>Risque d'extinction</span>
+
+<br>
+
+.center[
+  ![:scale 70%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/extinction_risk.png)
+]
+
+.cite[Holt et al. 2005 Oikos]
+
+---
+
+# L'effet de la variabilité sur le taux démographique peut être <span style='color: #67a9cf;'>positif</span> ou <span style='color: #ef8a62;'>negatif</span>
+
+- <span style='color: #ef8a62;'>Risque d'extinction</span>
+- <span style='color: #67a9cf;'>Inégalité de Jensen</span>
+
+.center[
+  ![:scale 70%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/jensens_ineq.png)
 ]
 
 ---
-# More ressources
+class: center, inverse
 
-You can check the `xaringan` presentation (which this template relies on):
 
-https://slides.yihui.org/xaringan/#1
+### Ch.2: Quantifier l'effet relatif de la compétition et du climat sur les taux démographiques des arbres
 
-And also check all remark.js fonctionalities available in this template:
+---
+class: center, inverse
 
-https://remarkjs.com/#1
+
+### Ch.2: Quantifier l'effet relatif de la compétition et du climat sur les taux démographiques des arbres
+
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+### Ch.3: Quantifier l'effet de la variabilité des taux démographiques sur la limite <br> de l'aire de répartition
+
+---
+
+# Comment quantifier la sensibilité $r(E)$ à la **compétition** et au **climat** ?
+
+.center[![:scale 100%](images/ipm_concept.png)]
+---
+
+- $r = \lambda \sim compétition + climat$
+
+--
+
+- $\lambda$ est decomposé en 3 sous modèles:
+  - Croissance
+  - Survie
+  - Recrutement
+
+--
+
+- Parcelles permanentes d'inventaire forestier
+
+---
+
+<br>
+
+.center[![:scale 90%](images/plot_dist.png)]
+
+---
+
+# L'approche
+
+Comment quantifier l'effet de la **compétition** et du **climat** sur les taux démographiques des arbres?
+
+
+- $r = \lambda \sim compétition + climat$
+
+- $\lambda$ est decomposé en 3 sous modèles:
+  - Croissance
+  - Survie
+  - Recrutement
+
+- Parcelles permanentes d'inventaire forestier
+  - 1970-2020 - Intervalle de ~5 ans
+  - 31 espèces d'arbres
+  - 22 feuillus + 9 conifères
+  - Tolérance à l'ombre
+  - Succession
+
+---
+
+# L'approche - Modèle de Projection Integrale
+
+Comment quantifier l'effet de la **compétition** et du **climat** sur les taux démographiques des arbres?
+
+.center[![:scale 62%](images/ipm.png)]
+
+---
+
+# L'approche
+
+- $r = \lambda \sim compétition + climat$
+
+- $\lambda$ est decomposé en 3 sous modèles:
+  - Croissance
+  - Survie
+  - Recrutement
+
+
+- Modèles hiérarchiques non linéaires bayésiens
+
+  - Hiérarchique: variance partitionée à differentes échelles
+  - non linéaire: modèles mechanistiques basés sur l'écologie
+  - Bayésien: pour tracer l'incertitude
+
+---
+
+# Les modèles démographiques
+
+- Modèle de croissance de Von Bertalanffy (~ temps + taille de l'individu)
+
+.center[![:scale 100%](https://willvieira.github.io/book_forest-demography-IPM/model_description_files/figure-html/fig-VBModel-1.png)]
+
+---
+
+# Les modèles démographiques
+
+- Modèle de croissance de Von Bertalanffy (~ temps + taille de l'individu)
+- Modèle de survie (~ temps)
+
+.center[![:scale 80%](https://willvieira.github.io/book_forest-demography-IPM/model_description_files/figure-html/fig-mortModel-1.png)]
+
+---
+
+# Les modèles démographiques
+
+- Modèle de croissance de Von Bertalanffy (~ temps + taille de l'individu)
+- Modèle de survie (~ temps)
+- Modèle de recrutement (~ temps + taille de la parcelle)
+
+.center[![:scale 80%](https://willvieira.github.io/book_forest-demography-IPM/model_description_files/figure-html/fig-recModel-1.png)]
+
+---
+
+# Les covariables - compétition
+
+- $\beta$: l'effet total de la surface terrière des **individus plus grands**
+- $\theta$: l'effet partagé entre conspécifique et hétérospécifique
+
+.center[![:scale 100%](https://willvieira.github.io/book_forest-demography-IPM/covariates_description_files/figure-html/fig-CovCompEffectGrowthMort-1.png)]
+
+---
+
+# Les covariables - climat
+
+Température moyenne annuelle + précipitation annuelle moyenne
+
+- $\xi$: climat optimal
+- $\sigma$: étendue de la niche
+
+.center[![:scale 70%](https://willvieira.github.io/book_forest-demography-IPM/covariates_description_files/figure-html/fig-CovClim-1.png)]
+
+---
+class: center, inverse, middle
+
+# Validation des modèles démographiques
+
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+---
+
+
+# Validation des modèles
+
+**Croissance**: la taille maximale prédite pour une espèce est corrélée à la taille maximale des espèces trouvées dans la littérature
+
+.center[![:scale 80%](https://willvieira.github.io/book_forest-demography-IPM/pars_intercept_files/figure-html/fig-efszGrowth2-1.png)]
+
+.cite[Burns et al. 1990]
+
+---
+
+# Validation des modèles
+
+**Survie**: la longévité prédite pour une espèce est corrélée à l'âge maximum trouvé dans la littérature
+
+.center[![:scale 90%](https://willvieira.github.io/book_forest-demography-IPM/pars_intercept_files/figure-html/fig-efszMort2-1.png)]
+
+.cite[Burns et al. 1990]
+
+---
+# Validation des modèles
+
+**Compétition**: l'effet de la densité augmente pour les espèces qui sont intolérante à l'ombre
+
+.center[![:scale 80%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/comp.png)]
+
+.cite[Burns et al. 1990]
+
+---
+
+**Climat**: l'optimal climatique n'est pas corrélé avec le centre de la distribution
+
+.center[![:scale 80%](https://willvieira.github.io/book_forest-demography-IPM/pars_climate_files/figure-html/fig-matDist-1.png)]
+
+.cite[Demographic compensation stabilizes tree populations - Yang et al. 2022 Ecology Letters]
+
+---
+
+# Modèle de Projection Integrale
+
+.center[![:scale 62%](images/ipm.png)]
+
+---
+class: center, inverse, middle
+
+### Quelle est la sensibilité du taux de croissance au **climat** et à la **compétition** ?
+
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+### Comment cette sensibilité varie dans <br>le gradient de l'aire de répartition ?
+
+---
+
+# Analyse de perturbations
+
+<br>
+
+$$
+	\frac{\partial \lambda_i}{\partial X_i} \approx \frac{\Delta \lambda_i}{\Delta X_i}
+$$
+
+.center[![:scale 50%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/sens_example.png)]
+
+.cite[Adapté de Caswell 2001 - LTRE]
+
+---
+
+# $\lambda$ est plus sensible à la **temperature** suivi de la **compétition conspécifique**
+
+.center[![:scale 47%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/fig-ame.png)]
+
+---
+
+# La sensibilité est especifique à la parcelle
+
+<br>
+
+*Acer rubrum*
+
+.center[![:scale 80%](images/sens_acer.png)]
+
+---
+
+# Comment la sensibilité varie dans le gradient de température ?
+
+.center[![:scale 80%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/hot_vs_cold.png)]
+
+---
+
+# ↑ sensitivité au climat dans les bordures <br> ↑ sensibilité à la competition dans la limite froide
+
+<br>
+
+.center[![:scale 100%](https://willvieira.github.io/book_forest-demography-IPM/marginal_lambda_files/figure-html/fig-hot_vs_cold-1.png)]
+
+---
+
+# Conclusion
+
+- $\lambda$ est plus sensible au climat que à la compétition
+- La sensibilité au climat augmente dans les bordures froides et chaudes
+- L'effet de la compétition augmente seulement dans la bordure froide
+
+<br>
+Permet de mieux comprendre l'effet
+- **changements climatiques**
+- **l'aménagement forestier**
 
 
 ---
+class: middle, center, inverse
+
+### Comment le taux de croissance ( $\lambda$ ) varie<br>dans le gradient de température?
+
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+**Quelle est le rôle des différentes sources de variabilité en $\lambda$ sur la <br>limite de l'aire de répartition?**
+
+
+---
+
+# Les sources de variabilité en $\lambda$
+
+<br>
+
+.center[![:scale 100%](images/ch3_concept_A.png)]
+
+---
+
+# Les sources de variabilité en $\lambda$
+
+<br>
+
+.center[![:scale 100%](images/ch3_concept_B.png)]
+
+
+---
+
+# Les sources de variabilité en $\lambda$
+
+<br>
+
+.center[![:scale 100%](images/ch3_concept_C.png)]
+
+---
+
+# Les sources de variabilité en $\lambda$
+
+<br>
+
+.center[![:scale 100%](images/ch3_concept_D.png)]
+
+---
+
+# Les sources de variabilité en $\lambda$
+
+<br>
+
+.center[![:scale 100%](images/ch3_concept2_A.png)]
+
+---
+
+# Les sources de variabilité en $\lambda$
+
+<br>
+
+.center[![:scale 100%](images/ch3_concept2_B.png)]
+
+---
+
+# Les sources de variabilité en $\lambda$
+
+<br>
+
+.center[![:scale 100%](images/ch3_concept2_C.png)]
+
+---
+
+# Comment suitable probability change dans le gradient de temperature?
+
+.center[![:scale 80%](https://willvieira.github.io/book_forest-demography-IPM/extinction_risk_files/figure-html/fig-res_example-1.png)]
+
+
+---
+
+# Comment suitable probability change dans le gradient de temperature?
+
+<br>
+
+.center[![:scale 90%](https://willvieira.github.io/book_forest-demography-IPM/extinction_risk_files/figure-html/fig-sp-example-1.png)]
+
+
+---
+
+.center[![:scale 90%](https://willvieira.github.io/book_forest-demography-IPM/extinction_risk_files/figure-html/fig-sp_comp_vs_nocomp2-1.png)]
+
+---
+
+# Conclusion
+
+- la démographie est plus sensible au climat qu'à la compétition
+- La sensibilité à la compétition est plus importante au centre
+
+--
+- La variabilité joue un rôle considérable dans la limite de l'aire de répartition
+- Réconciliation des échelles
+- Démographie + métacommunauté
+
+$$
+\frac{dp}{dt} = \alpha p (1 - p) - \varepsilon p
+$$
+
+
+```{r,echo=FALSE,fig.height=4}
+library(tidyverse)
+
+# generate random population growth rates
+set.seed(0.0)
+expand_grid(
+    mean = c(.05),
+    sd = c(0.05, 0.2)
+  ) |>
+  group_by(sd) |>
+  expand_grid(draw = 1:2000) |>
+  mutate(
+    lambda = rnorm(n(), mean, sd)
+  ) |>
+  filter(sd == 0.05) |>
+  ggplot() +
+  aes(lambda) +
+  aes(fill = factor(sd)) +
+  geom_density(alpha = 0.7, color = 'transparent') +
+  geom_vline(xintercept = 0, linetype = 2) +
+  scale_fill_manual(
+    values = c('#5ab4ac', '#d8b365'),
+    labels = c(
+      expression(bar(lambda)~'='~'1.05; '~sigma[lambda]~'='~'0.05'),
+      expression(bar(lambda)~'='~'1.05; '~sigma[lambda]~'='~'0.2')
+    )
+  ) +
+  theme_classic() +
+  labs(
+    x = expression(lambda),
+    y = '',
+    fill = NULL,
+    # subtitle = expression('Distribution of 2000 draws of'~lambda~'~'~plain(N(1.05, sd)))
+  ) +
+  scale_x_continuous(breaks = seq(0.5, 1.5, 0.5)) +
+  xlim(-.5, .5) +
+  theme(
+    axis.ticks.y = element_blank(),
+    axis.text.y = element_blank(),
+    legend.position = 'none'
+  )
+```
+
+---
+
 class: inverse
 
 .pull-left1[
 <br>
 
-# Key message here
+# Obrigado !
 
-<br><br><br><br><br><br><br><br>
+<br><br><br>
 
-**Special thanks to**
+**Dominique Gravel**
 
-Nice people
+**Robert Bradley**
+
+**Bill Shipley**
+
+**Daniel Houle**
+
+**Labo++**
+
+**Amaël Le Squin**
+
+**Andrew MacDonald**
 ]
 
 .pull-right1[
