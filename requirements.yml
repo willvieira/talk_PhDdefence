@@ -1,4 +1,5 @@
 r_packages:
+  - tidyverse
   - knitr
   - markdown
   - rmarkdown
