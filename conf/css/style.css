@@ -35,7 +35,7 @@
     color: #e7e8e2;
     font-size: 42px!important;
     font-weight: normal;
-    font-family: MuseoModerno-Light;
+    font-family: MuseoModerno-ExtraLight;
     margin-top: 0px;
     width: 65%;
     margin-block-end: 0;
@@ -156,19 +156,26 @@ a {
 .inverse h1 {
   font-size: 54px!important;
   width: 100%;
-  font-family: MuseoModerno-Light;
+  font-family: MuseoModerno-ExtraLight;
 }
 
 .inverse h2 {
   font-size: 48px!important;
   width: 100%;
-  font-family: MuseoModerno-ExtraLight;
+  font-family: MuseoModerno-thin;
 }
 
 .inverse h3 {
   font-size: 40px!important;
   width: 100%;
   font-family: MuseoModerno-Thin;
+}
+
+.inverse h4 {
+  font-size: 30px!important;
+  width: 100%;
+  font-family: MuseoModerno-Thin;
+  margin-top: -100px;
 }
 
 /* background color and old paper style (second option) */
