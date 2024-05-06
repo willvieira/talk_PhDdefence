@@ -7,7 +7,7 @@ output:
       in_header: conf/style-header.html
     lib_dir: assets
     seal: false
-    css: ["default", "conf/css/style.css", "conf/css/fonts.css"]
+    css: ["default", "conf/css/style.css", "conf/css/fonts.css", "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"]
     nature:
       slideNumberFormat: "%current%" # show only the current slide number
       highlightStyle: solarized-light
@@ -81,53 +81,53 @@ class: middle, title-slide
 .center[![:scale 70%](https://review.brunswickgroup.com/wp-content/uploads/2023/04/BiodiversityCartoon-850x659-50x50.jpg)] -->
 
 ---
-
-# Modèle mechanistique basé sur la <br> théorie de la métacommunauté
+# Modèle de communauté basé sur la<br>théorie de la métapopulation
 
 <br>
 
-.center[![:scale 85%](images/model_complete_temp.svg)]
+.center[![:scale 85%](images/model_complete_temp.png)]
+
+.cite[Vissault et al. [2020](https://link) Journal of Biogeography]
+
+
+---
+class: animated, fadeIn
+
+# Modèle de communauté basé sur la<br>théorie de la métapopulation
+
+<br>
+
+.center[![:scale 85%](images/model_complete_Reg.png)]
+
 
 .cite[Vissault et al. [2020](https://link) Journal of Biogeography]
 
 
 ---
 
-# Modèle mechanistique basé sur la <br> théorie de la métacommunauté
+# Modèle de communauté basé sur la<br>théorie de la métapopulation
 
 <br>
 
-.center[![:scale 85%](images/model_complete_Reg.svg)]
-
-
-.cite[Vissault et al. [2020](https://link) Journal of Biogeography]
-
-
----
-
-# Modèle mechanistique basé sur la <br> théorie de la métacommunauté
-
-<br>
-
-.center[![:scale 85%](images/model_complete_noManag.svg)]
+.center[![:scale 85%](images/model_complete_noManag.png)]
 
 .cite[Vissault et al. [2020](https://link) Journal of Biogeography]
 
 ---
 
-# Modèle mechanistique basé sur la <br> théorie de la métacommunauté
+# Modèle de communauté basé sur la<br>théorie de la métapopulation
 
 <br>
 
 De très bonnes prédictions avec peu de paramètres !
 
-.center[![:scale 100%](https://raw.githubusercontent.com/willvieira/talk_STM-BScUdeS/master/images/338_500ts_final_land.png)]
+.center[![:scale 100%](images/338_500ts_final_land.png)]
 
 .cite[Vissault et al. [2020](https://link) Journal of Biogeography]
 
 ---
 
-# Modèle mechanistique basé sur la <br> théorie de la métacommunauté
+# Modèle de communauté basé sur la<br>théorie de la métapopulation
 
 Le réchauffement des températures réduira les <span style="color:#95c887">**forêts mixtes**</span>
 
@@ -138,30 +138,39 @@ Le réchauffement des températures réduira les <span style="color:#95c887">**f
 ---
 class: center, inverse, middle
 
+#### Chapitre 1
+
+<hr width="50%" align="center" size="0.3" color="orange"></hr>
 
 ### Comment l'aménagement forestier peut-il accélérer la réponse des forêts au changement climatique ?
 
-<hr width="100%" align="left" size="0.3" color="orange"></hr>
-
-### Chapitre 1
 ---
 
 # Quel est l'effet de l'aménagement forestier sur la vitesse de déplacement de l'aire de répartition ?
 
 <br>
 
-.center[![:scale 85%](images/model_complete.svg)]
+.center[![:scale 85%](images/model_complete.png)]
 
 ---
 
+# La plantation d'enrichissement est la pratique la plus efficace pour augmenter le deplacement
 
-# La plantation d'enrichissement est la pratique la plus efficace pour augumenter le deplacement
+<br>
 
-.center[
-![:scale 60%](https://willvieira.github.io/ms_STM-managed/manuscript/img/sim-result_3.png)
-]
+.center[![:scale 95%](images/ch1_result.png)]
 
 .cite[Vieira et al. en révision]
+
+---
+# Conclusion Chapitre 1
+
+.center[![:scale 50%](images/model_complete.png)]
+
+- ✓ La plantation d'enrichissement augmente le taux de déplacement et la résilience des état forestier soumis aux changements climatiques
+- ✓ Ces résultats peuvent guider des futures travaille experimentales
+- ✓ La réponse des états forestiers est plus sensible à la colonisation que à l'extinction
+- 𐄂 Supposition majeur: les espèces d'un même état forestier réagissent de la même manière au climat et à la compétition
 
 ---
 # Le taux de colonisation et extinction varie entre les **espèce** et dans leur **aire de distribution**
@@ -204,7 +213,7 @@ class: center, inverse, middle
 
 ---
 
-# La corrélation entre **performance** et **occurrence** <br> est faible pour la majorité des espèces
+# La corrélation entre **taux de croissance** et **occurrence** est faible pour la majorité des espèces
 
 <br>
 
@@ -217,15 +226,16 @@ class: center, inverse, middle
 ---
 # La variabilité ne devrait pas être négligée
 
-<br><br>
-.center[![:scale 90%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/growth_abibal.png)]
+<br>
+
+.center[![:scale 80%](images/lambda_vs_temp_abibal_exp1.png)]
 
 ---
 
 # Les multiples sources de variabilité
-
+ 
 .center[
-  ![:scale 60%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/Shoemaker2020a.png)
+  ![:scale 65%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/Shoemaker2020a.png)
 ]
 
 .cite[Adapté de Shoemaker et al. 2020 Ecology]
@@ -236,7 +246,7 @@ class: center, inverse, middle
 # Les multiples sources de variabilité
 
 .center[
-  ![:scale 60%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/Shoemaker2020b.png)
+  ![:scale 65%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/Shoemaker2020b.png)
 ]
 
 .cite[Adapté de Shoemaker et al. 2020 Ecology]
@@ -246,7 +256,7 @@ class: center, inverse, middle
 # Les multiples sources de variabilité
 
 .center[
-  ![:scale 60%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/Shoemaker2020c.png)
+  ![:scale 65%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/Shoemaker2020c.png)
 ]
 
 .cite[Adapté de Shoemaker et al. 2020 Ecology]
@@ -256,14 +266,14 @@ class: center, inverse, middle
 # Les multiples sources de variabilité
 
 .center[
-  ![:scale 60%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/Shoemaker2020d.png)
+  ![:scale 65%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/Shoemaker2020d.png)
 ]
 
 .cite[Adapté de Shoemaker et al. 2020 Ecology]
 
 ---
 
-# L'effet de la variabilité sur le taux démographique peut être <span style='color: #67a9cf;'>positif</span> ou <span style='color: #ef8a62;'>négatif</span>
+# L'effet de la variabilité du taux démographique peut être <span style='color: #67a9cf;'>positif</span> ou <span style='color: #ef8a62;'>négatif</span> à une population
 
 - <span style='color: #ef8a62;'>Risque d'extinction</span>
 
@@ -277,7 +287,7 @@ class: center, inverse, middle
 
 ---
 
-# L'effet de la variabilité sur le taux démographique peut être <span style='color: #67a9cf;'>positif</span> ou <span style='color: #ef8a62;'>negatif</span>
+# L'effet de la variabilité du taux démographique peut être <span style='color: #67a9cf;'>positif</span> ou <span style='color: #ef8a62;'>négatif</span> à une population
 
 - <span style='color: #ef8a62;'>Risque d'extinction</span>
 - <span style='color: #67a9cf;'>Inégalité de Jensen</span>
@@ -287,93 +297,56 @@ class: center, inverse, middle
 ]
 
 ---
-class: center, inverse
+class: center, inverse, middle
 
 
-### Ch.2: Quantifier l'effet relatif de la compétition et du climat sur les taux démographiques des arbres
-
----
-class: center, inverse
-
-
-### Ch.2: Quantifier l'effet relatif de la compétition et du climat sur les taux démographiques des arbres
+### .font80[Chapitre 2]:<br>Quelle est la sensibilité du taux de croissance au **climat** et à la **compétition**?
 
 <hr width="100%" align="left" size="0.3" color="orange"></hr>
 
-### Ch.3: Quantifier l'effet de la variabilité des taux démographiques sur la limite <br> de l'aire de répartition
+### .font80[Chapitre 3]:<br>Comment le taux de croissance varie<br>dans le gradient de température?
 
 ---
+class: center, inverse, middle
 
-# Comment quantifier la sensibilité $r(E)$ à la **compétition** et au **climat** ?
+## Le Modèle
 
-.center[![:scale 100%](images/ipm_concept.png)]
----
-
-- $r = \lambda \sim compétition + climat$
-
---
-
-- $\lambda$ est decomposé en 3 sous modèles:
-  - Croissance
-  - Survie
-  - Recrutement
-
---
-
-- Parcelles permanentes d'inventaire forestier
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
 
 ---
+# Le Modèle
 
 <br>
 
-.center[![:scale 90%](images/plot_dist.png)]
+.center[![:scale 100%](images/ipm_conceptA.png)]
 
 ---
+# Le Modèle
 
-# L'approche
+<br>
 
-Comment quantifier l'effet de la **compétition** et du **climat** sur les taux démographiques des arbres?
-
-
-- $r = \lambda \sim compétition + climat$
-
-- $\lambda$ est decomposé en 3 sous modèles:
-  - Croissance
-  - Survie
-  - Recrutement
-
-- Parcelles permanentes d'inventaire forestier
-  - 1970-2020 - Intervalle de ~5 ans
-  - 31 espèces d'arbres
-  - 22 feuillus + 9 conifères
-  - Tolérance à l'ombre
-  - Succession
+.center[![:scale 100%](images/ipm_conceptB.png)]
 
 ---
+# Le Modèle
 
-# L'approche - Modèle de Projection Integrale
+<br>
 
-Comment quantifier l'effet de la **compétition** et du **climat** sur les taux démographiques des arbres?
-
-.center[![:scale 62%](images/ipm.png)]
+.center[![:scale 100%](images/ipm_conceptC.png)]
 
 ---
+# Le Modèle
 
-# L'approche
+<br>
 
-- $r = \lambda \sim compétition + climat$
+.center[![:scale 100%](images/ipm_conceptD.png)]
 
-- $\lambda$ est decomposé en 3 sous modèles:
-  - Croissance
-  - Survie
-  - Recrutement
+---
+# Le Modèle
 
+<br>
 
-- Modèles hiérarchiques non linéaires bayésiens
-
-  - Hiérarchique: variance partitionée à differentes échelles
-  - non linéaire: modèles mechanistiques basés sur l'écologie
-  - Bayésien: pour tracer l'incertitude
+.center[![:scale 100%](images/ipm_conceptE.png)]
 
 ---
 
@@ -381,7 +354,9 @@ Comment quantifier l'effet de la **compétition** et du **climat** sur les taux 
 
 - Modèle de croissance de Von Bertalanffy (~ temps + taille de l'individu)
 
-.center[![:scale 100%](https://willvieira.github.io/book_forest-demography-IPM/model_description_files/figure-html/fig-VBModel-1.png)]
+<br><br>
+
+.center[![:scale 73%](images/growth_example.png)]
 
 ---
 
@@ -390,7 +365,9 @@ Comment quantifier l'effet de la **compétition** et du **climat** sur les taux 
 - Modèle de croissance de Von Bertalanffy (~ temps + taille de l'individu)
 - Modèle de survie (~ temps)
 
-.center[![:scale 80%](https://willvieira.github.io/book_forest-demography-IPM/model_description_files/figure-html/fig-mortModel-1.png)]
+<br>
+
+.center[![:scale 73%](images/survival_example.png)]
 
 ---
 
@@ -400,7 +377,7 @@ Comment quantifier l'effet de la **compétition** et du **climat** sur les taux 
 - Modèle de survie (~ temps)
 - Modèle de recrutement (~ temps + taille de la parcelle)
 
-.center[![:scale 80%](https://willvieira.github.io/book_forest-demography-IPM/model_description_files/figure-html/fig-recModel-1.png)]
+.center[![:scale 100%](images/recruit_example.png)]
 
 ---
 
@@ -409,7 +386,7 @@ Comment quantifier l'effet de la **compétition** et du **climat** sur les taux 
 - $\beta$: l'effet total de la surface terrière des **individus plus grands**
 - $\theta$: l'effet partagé entre conspécifique et hétérospécifique
 
-.center[![:scale 100%](https://willvieira.github.io/book_forest-demography-IPM/covariates_description_files/figure-html/fig-CovCompEffectGrowthMort-1.png)]
+.center[![:scale 100%](images/competition_example.png)]
 
 ---
 
@@ -420,67 +397,61 @@ Température moyenne annuelle + précipitation annuelle moyenne
 - $\xi$: climat optimal
 - $\sigma$: étendue de la niche
 
-.center[![:scale 70%](https://willvieira.github.io/book_forest-demography-IPM/covariates_description_files/figure-html/fig-CovClim-1.png)]
-
----
-class: center, inverse, middle
-
-# Validation des modèles démographiques
-
-<hr width="100%" align="left" size="0.3" color="orange"></hr>
+.center[![:scale 70%](images/climate_example.png)]
 
 ---
 
+# Paramétrisation
+
+Parcelles permanentes d'inventaire forestier des <span style="font-weight: 400; color: #872d7b">Etats-Unis</span> et <span style="font-weight: 400; color: #4f2f8a">Québec</span>
+
+.center[![:scale 90%](images/plot_dist.png)]
+
+---
+
+# Paramétrisation
+
+- Parcelles permanentes d'inventaire forestier
+
+  - 1970-2020 - Intervalle de ~5 ans
+  - 31 espèces d'arbres
+  - 22 feuillus + 9 conifères
+  - Tolérance à l'ombre
+  - Succession
+
+--
+
+- Modèles hiérarchiques non linéaires bayésiens
+
+  - Hiérarchique: variance partitionnée à differentes échelles
+  - non linéaire: modèles mechanistiques basés sur l'écologie
+  - Bayésien: pour suivre l'incertitude
+
+---
 
 # Validation des modèles
 
 **Croissance**: la taille maximale prédite pour une espèce est corrélée à la taille maximale des espèces trouvées dans la littérature
 
-.center[![:scale 80%](https://willvieira.github.io/book_forest-demography-IPM/pars_intercept_files/figure-html/fig-efszGrowth2-1.png)]
-
-.cite[Burns et al. 1990]
-
----
-
-# Validation des modèles
-
-**Survie**: la longévité prédite pour une espèce est corrélée à l'âge maximum trouvé dans la littérature
-
-.center[![:scale 90%](https://willvieira.github.io/book_forest-demography-IPM/pars_intercept_files/figure-html/fig-efszMort2-1.png)]
-
-.cite[Burns et al. 1990]
+.center[![:scale 85%](images/growth_vs_litterature.png)]
 
 ---
 # Validation des modèles
 
 **Compétition**: l'effet de la densité augmente pour les espèces qui sont intolérante à l'ombre
 
-.center[![:scale 80%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/comp.png)]
-
-.cite[Burns et al. 1990]
-
----
-
-**Climat**: l'optimal climatique n'est pas corrélé avec le centre de la distribution
-
-.center[![:scale 80%](https://willvieira.github.io/book_forest-demography-IPM/pars_climate_files/figure-html/fig-matDist-1.png)]
-
-.cite[Demographic compensation stabilizes tree populations - Yang et al. 2022 Ecology Letters]
-
----
-
-# Modèle de Projection Integrale
-
-.center[![:scale 62%](images/ipm.png)]
+.center[![:scale 80%](images/competition_vs_shade.png)]
 
 ---
 class: center, inverse, middle
 
-### Quelle est la sensibilité du taux de croissance au **climat** et à la **compétition** ?
+#### Chapitre 2
 
-<hr width="100%" align="left" size="0.3" color="orange"></hr>
+<hr width="50%" align="center" size="0.3" color="orange"></hr>
 
-### Comment cette sensibilité varie dans <br>le gradient de l'aire de répartition ?
+### 2.1. Quelle est la sensibilité du taux de croissance au **climat** et à la **compétition**?
+
+### 2.2. Comment cette sensibilité varie dans <br>le gradient de l'aire de répartition?
 
 ---
 
@@ -492,7 +463,21 @@ $$
 	\frac{\partial \lambda_i}{\partial X_i} \approx \frac{\Delta \lambda_i}{\Delta X_i}
 $$
 
-.center[![:scale 50%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/sens_example.png)]
+.center[![:scale 65%](images/sens_exampleA.png)]
+
+.cite[Adapté de Caswell 2001 - LTRE]
+
+---
+
+# Analyse de perturbations
+
+<br>
+
+$$
+	\frac{\partial \lambda_i}{\partial X_i} \approx \frac{\Delta \lambda_i}{\Delta X_i}
+$$
+
+.center[![:scale 65%](images/sens_exampleB.png)]
 
 .cite[Adapté de Caswell 2001 - LTRE]
 
@@ -500,17 +485,9 @@ $$
 
 # $\lambda$ est plus sensible à la **temperature** suivi de la **compétition conspécifique**
 
-.center[![:scale 47%](https://raw.githubusercontent.com/willvieira/talk_seminar2/master/images/fig-ame.png)]
-
----
-
-# La sensibilité est especifique à la parcelle
-
 <br>
 
-*Acer rubrum*
-
-.center[![:scale 80%](images/sens_acer.png)]
+.center[![:scale 70%](images/fig-ame.png)]
 
 ---
 
@@ -520,24 +497,43 @@ $$
 
 ---
 
-# ↑ sensitivité au climat dans les bordures <br> ↑ sensibilité à la competition dans la limite froide
+# ↑ sensibilité à la competition dans la limite froide <br> ↑ sensitivité au climat dans les deux limites
 
 <br>
 
-.center[![:scale 100%](https://willvieira.github.io/book_forest-demography-IPM/marginal_lambda_files/figure-html/fig-hot_vs_cold-1.png)]
+.center[![:scale 100%](images/ame_hot_vs_coldA.png)]
+
+---
+
+# ↑ sensibilité à la competition dans la limite froide <br> ↑ sensitivité au climat dans les deux limites
+
+<br>
+
+.center[![:scale 100%](images/ame_hot_vs_coldB.png)]
+
+---
+
+# ↑ sensibilité à la competition dans la limite froide <br> ↑ sensitivité au climat dans les deux limites
+
+<br>
+
+.center[![:scale 100%](images/ame_hot_vs_coldC.png)]
 
 ---
 
 # Conclusion
 
-- $\lambda$ est plus sensible au climat que à la compétition
-- La sensibilité au climat augmente dans les bordures froides et chaudes
-- L'effet de la compétition augmente seulement dans la bordure froide
+- Le taux de croissance ( $\lambda$ ) est plus sensible au climat que à la compétition
+- La sensibilité du taux de croissance au climat augmente dans les bordures froides et chaudes
+- La sensibilité du taux de croissance à la compétition augmente seulement dans la bordure froide
+
+--
 
 <br>
+
 Permet de mieux comprendre l'effet
-- **changements climatiques**
-- **l'aménagement forestier**
+- **changements climatiques** (sensibilité au climat)
+- **l'aménagement forestier** (sensibilité à la compétition)
 
 
 ---
@@ -546,9 +542,6 @@ class: middle, center, inverse
 ### Comment le taux de croissance ( $\lambda$ ) varie<br>dans le gradient de température?
 
 <hr width="100%" align="left" size="0.3" color="orange"></hr>
-
-**Quelle est le rôle des différentes sources de variabilité en $\lambda$ sur la <br>limite de l'aire de répartition?**
-
 
 ---
 
@@ -609,23 +602,67 @@ class: middle, center, inverse
 
 ---
 
-# Comment suitable probability change dans le gradient de temperature?
+# Comment le probabilité de croissance ( $\Lambda$ ) varie<br>dans le gradient de température?
 
-.center[![:scale 80%](https://willvieira.github.io/book_forest-demography-IPM/extinction_risk_files/figure-html/fig-res_example-1.png)]
+<br><br>
 
+.center[![:scale 75%](images/godsoeB.png)]
 
 ---
 
-# Comment suitable probability change dans le gradient de temperature?
+# Distribution du taux de croissance dans le gradient de temperature
 
 <br>
 
-.center[![:scale 90%](https://willvieira.github.io/book_forest-demography-IPM/extinction_risk_files/figure-html/fig-sp-example-1.png)]
+.center[![:scale 85%](images/lambda_vs_temp_abibal.png)]
 
 
 ---
 
-.center[![:scale 90%](https://willvieira.github.io/book_forest-demography-IPM/extinction_risk_files/figure-html/fig-sp_comp_vs_nocomp2-1.png)]
+# Distribution du taux de croissance dans le gradient de temperature
+
+<br>
+
+.center[![:scale 93%](images/lambda_vs_temp_abibal_model.png)]
+
+---
+
+# Distribution du taux de croissance dans le gradient de temperature
+
+<br>
+
+.center[![:scale 93%](images/lambda_vs_temp_abibal_modelB.png)]
+
+---
+
+# Distribution du taux de croissance dans le gradient de temperature
+
+<br>
+
+.center[![:scale 93%](images/lambda_vs_temp_abibal_modelC.png)]
+
+---
+
+# Distribution du taux de croissance dans le gradient de temperature 
+
+<br>
+
+.center[![:scale 93%](images/lambda_vs_temp_abibal_modelD.png)]
+
+---
+
+# La probabilité de croissance ( $\Lambda$ ) reduit plus dans la limite chaude que la limite froide
+
+<br>
+
+.center[![:scale 100%](images/suitable_probability_4position.png)]
+
+---
+# L'effet de la compétition sur la probabilité de croissance ( $\Lambda$ ) est plus grand dans la limite chaude
+
+<br>
+
+.center[![:scale 95%](images/suitable_probability_comp.png)]
 
 ---
 
@@ -642,50 +679,6 @@ class: middle, center, inverse
 $$
 \frac{dp}{dt} = \alpha p (1 - p) - \varepsilon p
 $$
-
-
-```{r,echo=FALSE,fig.height=4}
-library(tidyverse)
-
-# generate random population growth rates
-set.seed(0.0)
-expand_grid(
-    mean = c(.05),
-    sd = c(0.05, 0.2)
-  ) |>
-  group_by(sd) |>
-  expand_grid(draw = 1:2000) |>
-  mutate(
-    lambda = rnorm(n(), mean, sd)
-  ) |>
-  filter(sd == 0.05) |>
-  ggplot() +
-  aes(lambda) +
-  aes(fill = factor(sd)) +
-  geom_density(alpha = 0.7, color = 'transparent') +
-  geom_vline(xintercept = 0, linetype = 2) +
-  scale_fill_manual(
-    values = c('#5ab4ac', '#d8b365'),
-    labels = c(
-      expression(bar(lambda)~'='~'1.05; '~sigma[lambda]~'='~'0.05'),
-      expression(bar(lambda)~'='~'1.05; '~sigma[lambda]~'='~'0.2')
-    )
-  ) +
-  theme_classic() +
-  labs(
-    x = expression(lambda),
-    y = '',
-    fill = NULL,
-    # subtitle = expression('Distribution of 2000 draws of'~lambda~'~'~plain(N(1.05, sd)))
-  ) +
-  scale_x_continuous(breaks = seq(0.5, 1.5, 0.5)) +
-  xlim(-.5, .5) +
-  theme(
-    axis.ticks.y = element_blank(),
-    axis.text.y = element_blank(),
-    legend.position = 'none'
-  )
-```
 
 ---
 
