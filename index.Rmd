@@ -91,7 +91,6 @@ class: middle, title-slide
 
 
 ---
-class: animated, fadeIn
 
 # Modèle de communauté basé sur la<br>théorie de la métapopulation
 
@@ -300,18 +299,19 @@ class: center, inverse, middle
 class: center, inverse, middle
 
 
-### .font80[Chapitre 2]:<br>Quelle est la sensibilité du taux de croissance au **climat** et à la **compétition**?
+### .font80[Chapitre 2]:<br>Quelle est la sensibilité du taux de croissance au climat et à la compétition?
 
 <hr width="100%" align="left" size="0.3" color="orange"></hr>
 
 ### .font80[Chapitre 3]:<br>Comment le taux de croissance varie<br>dans le gradient de température?
 
 ---
-class: center, inverse, middle
+class: middle
 
-## Le Modèle
+background-image: url("images/IMG_2621.png")
+background-size: cover
 
-<hr width="100%" align="left" size="0.3" color="orange"></hr>
+# <br><br><br><br><br><br><br><br><br><br><br><br><br>.font180[Le modèle]
 
 ---
 # Le Modèle
@@ -449,7 +449,7 @@ class: center, inverse, middle
 
 <hr width="50%" align="center" size="0.3" color="orange"></hr>
 
-### 2.1. Quelle est la sensibilité du taux de croissance au **climat** et à la **compétition**?
+### 2.1. Quelle est la sensibilité du taux de croissance au climat et à la compétition?
 
 ### 2.2. Comment cette sensibilité varie dans <br>le gradient de l'aire de répartition?
 
@@ -521,7 +521,7 @@ $$
 
 ---
 
-# Conclusion
+# Conclusion Chapitre 2
 
 - Le taux de croissance ( $\lambda$ ) est plus sensible au climat que à la compétition
 - La sensibilité du taux de croissance au climat augmente dans les bordures froides et chaudes
@@ -539,12 +539,15 @@ Permet de mieux comprendre l'effet
 ---
 class: middle, center, inverse
 
-### Comment le taux de croissance ( $\lambda$ ) varie<br>dans le gradient de température?
+#### Chapitre 3
 
-<hr width="100%" align="left" size="0.3" color="orange"></hr>
+<hr width="50%" align="center" size="0.3" color="orange"></hr>
+
+### 3.1. Comment le taux de croissance ( $\lambda$ ) varie dans le gradient de température?
+
+### 3.2. Quel est l'effet de la compétition<br>sur les limites de l'aire de répartition ?
 
 ---
-
 # Les sources de variabilité en $\lambda$
 
 <br>
@@ -602,7 +605,7 @@ class: middle, center, inverse
 
 ---
 
-# Comment le probabilité de croissance ( $\Lambda$ ) varie<br>dans le gradient de température?
+# Comment le probabilité de croissance ( $\Lambda$ ) varie<br>dans le gradient de température?<br>Quel est l'effet de la compétition?
 
 <br><br>
 
@@ -658,55 +661,51 @@ class: middle, center, inverse
 .center[![:scale 100%](images/suitable_probability_4position.png)]
 
 ---
-# L'effet de la compétition sur la probabilité de croissance ( $\Lambda$ ) est plus grand dans la limite chaude
+# Conclusion Chapitre 3
 
 <br>
 
-.center[![:scale 95%](images/suitable_probability_comp.png)]
+- Le taux de croissance et sa variabilité peut ėtre decomposé dans une seule métrique (probabilité de croissance, $\Lambda$ )
+- La probabilité de croissance ( $\Lambda$ ) est affecté par la temperature et la compétition
+- L'effet de la température et de la compétition augmente vers la limite chaude de l'aire de répartition
 
 ---
-
 # Conclusion
 
-- la démographie est plus sensible au climat qu'à la compétition
-- La sensibilité à la compétition est plus importante au centre
+.center[![:scale 80%](images/conclusionA.png)]
 
---
-- La variabilité joue un rôle considérable dans la limite de l'aire de répartition
-- Réconciliation des échelles
-- Démographie + métacommunauté
+---
+# Conclusion
 
-$$
-\frac{dp}{dt} = \alpha p (1 - p) - \varepsilon p
-$$
+.center[![:scale 80%](images/conclusionB.png)]
+
+---
+# Conclusion
+
+.center[![:scale 80%](images/conclusionC.png)]
+
+---
+# Avenues possibles
+
+<br>
+
+.center[![:scale 100%](images/next_stepA.png)]
+
+---
+# Avenues possibles
+
+<br>
+
+.center[![:scale 100%](images/next_stepB.png)]
+
+---
+# Avenues possibles
+
+<br>
+
+.center[![:scale 100%](images/next_stepC.png)]
 
 ---
 
-class: inverse
-
-.pull-left1[
-<br>
-
-# Obrigado !
-
-<br><br><br>
-
-**Dominique Gravel**
-
-**Robert Bradley**
-
-**Bill Shipley**
-
-**Daniel Houle**
-
-**Labo++**
-
-**Amaël Le Squin**
-
-**Andrew MacDonald**
-]
-
-.pull-right1[
-<br>
-![:scale 90%](images/logo.png)
-]
+background-image: url("images/merci.png")
+background-size: cover
