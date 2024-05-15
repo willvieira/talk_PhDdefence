@@ -44,7 +44,7 @@ jobs:
           mv assets docs/
           mv conf docs/
           mv images docs/
-          mv slides.pdf docs/
+          # mv slides.pdf docs/
       
       - name: Deploy gh_pages
         uses: JamesIves/github-pages-deploy-action@v4
