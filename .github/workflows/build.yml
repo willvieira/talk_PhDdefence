@@ -31,8 +31,8 @@ jobs:
       - name: build html
         run: make
         
-      - name: build pdf
-        run: make pdf
+      # - name: build pdf
+      #   run: make pdf
 
       - name: prepare deployment
         run: |
