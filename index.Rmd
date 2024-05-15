@@ -191,7 +191,7 @@ class: center, inverse, middle
 .font120[*r ~ Climat*]
 
 .center[
-![:scale 75%](images/GodsoeA.png)
+![:scale 75%](images/godsoeA.png)
 ]
 
 .cite[Maguire Jr 1973 Am. Natur.; Holt 2009 PNAS; Fig adapted from Godsoe et al. 2017 TREE]
@@ -205,7 +205,7 @@ class: center, inverse, middle
 .font120[*r ~ Climat + compétition*]
 
 .center[
-![:scale 75%](images/GodsoeB.png)
+![:scale 75%](images/godsoeB.png)
 ]
 
 .cite[Maguire Jr 1973 Am. Natur.; Holt 2009 PNAS; Fig adapted from Godsoe et al. 2017 TREE]
